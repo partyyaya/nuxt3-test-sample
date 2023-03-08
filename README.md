@@ -16,8 +16,10 @@
 - 5.進入專案後，安裝依賴 `yarn install` 即初始化完成
 
 ## 創建使用本專案步驟
-- 1.安裝依賴：`yarn install`
-- 2.開發環境：`yarn run dev`
+- 1.使用 `nvm` 安裝 `node 16.11.0`：`nvm install 16.11.0`
+- 2.切換到該版本後，安裝 `yarn`：`npm install --global yarn`
+- 3.安裝依賴：`yarn install`
+- 4.開發環境：`yarn run dev`
 
 ## 正式版發布
 - 打包正式版：`yarn run build`
