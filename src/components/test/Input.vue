@@ -1,6 +1,6 @@
 <template>
-    <div>
-        testInput
-        <input type="text">
-    </div>
+  <div>
+    testInput
+    <input type="text">
+  </div>
 </template>
