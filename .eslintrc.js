@@ -19,7 +19,9 @@ module.exports = {
       'error',
       {
         // 避免 CRLF、LF 問題
-        endOfLine: 'auto'
+        endOfLine: 'auto',
+        // 避免結尾不使用分號而報錯
+        semi: false
       }
     ],
     'vue/multi-word-component-names': 'off',

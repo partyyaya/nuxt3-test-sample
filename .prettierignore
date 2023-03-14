@@ -1,0 +1,9 @@
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+**/.nuxt
+**/.vscode
+
+README.md
+package.json
