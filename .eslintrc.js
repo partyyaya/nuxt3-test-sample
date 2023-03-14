@@ -21,7 +21,8 @@ module.exports = {
         // 避免 CRLF、LF 問題
         endOfLine: 'auto',
         // 避免結尾不使用分號而報錯
-        semi: false
+        semi: false,
+        printWidth: 80
       }
     ],
     'vue/multi-word-component-names': 'off',

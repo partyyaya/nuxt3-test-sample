@@ -1,12 +1,7 @@
 <template>
   <div>
     <!-- 設置loading -->
-    <div
-      v-if="loading"
-      class="fixed left-0 top-0 h-0.5 w-full z-50 bg-green-500"
-    >
-      test loading
-    </div>
+    <div v-if="loading">test loading</div>
     <!-- 路由出口 -->
     <NuxtLayout>
       <NuxtPage />
