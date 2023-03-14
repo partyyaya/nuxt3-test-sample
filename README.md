@@ -5,7 +5,10 @@
   - `sass`
   - `vueuse`
   - `vue-tsc`：檢查 `vue` 文件上的 `ts` 錯誤
-  - `eslint` 相關：`eslint @nuxtjs/eslint-config-typescript eslint-plugin-vue`
+  - 安裝 `eslint`：`eslint`、`@nuxtjs/eslint-config-typescript`
+    - 關於 `nuxt3` 整合 `eslint`：[eslint-config](https://github.com/nuxt/eslint-config)
+  - 安裝 `prettier`：`prettier`、`eslint-config-prettier`、`eslint-plugin-prettier`
+    - 關於整合 `eslint`：[Integrating with Linters](https://prettier.io/docs/en/integrating-with-linters.html)
 
 ## 環境設定
 - Node 版本：16.11.0 以上，建議使用 [NVM](https://github.com/nvm-sh/nvm)
