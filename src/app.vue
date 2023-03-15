@@ -2,7 +2,11 @@
   <div>
     <!-- 設置loading -->
     <div v-if="loading">test loading</div>
-    <!-- 路由出口 -->
+    <!-- 
+      路由出口，NuxtLayout 預設使用 layout\default.vue
+      裡面的 slot 由 NuxtPage(pages資料夾下的內容填充)
+      等價於 <NuxtLayout name="default">
+    -->
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>

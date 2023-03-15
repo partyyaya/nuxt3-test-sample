@@ -1,8 +1,20 @@
 <template>
   <div>
     <h1>欢迎来到第一个页面</h1>
+    <!-- 對應 layout/header.vue -->
+    <NuxtLayout name="header">
+      <template #header>
+        <p>這段會放置在 header 插槽</p>
+      </template>
+      <template #default>
+        <p>被 NuxtLayout 包裹的元件將會放置到 Layout 的預設 slot 中</p>
+      </template>
+      <template #footer>
+        <p>這段會放置在 footer 插槽</p>
+      </template>
+    </NuxtLayout>
+    ------------------------------<br />
     <!-- 對應 pages/list.vue -->
-    <NuxtLayout name="header" />
     <NuxtLink to="/list"> 进入列表页 </NuxtLink>
     <!-- 使用 composables 內的 hook -->
     {{ foo }}

@@ -9,6 +9,7 @@
     - 關於 `nuxt3` 整合 `eslint`：[eslint-config](https://github.com/nuxt/eslint-config)
   - 安裝 `prettier`：`prettier`、`eslint-config-prettier`、`eslint-plugin-prettier`
     - 關於整合 `eslint`：[Integrating with Linters](https://prettier.io/docs/en/integrating-with-linters.html)
+- 本專案統一將大部分程式放入 `src` 資料夾中
 
 ## 環境設定
 - Node 版本：16.11.0 以上，建議使用 [NVM](https://github.com/nvm-sh/nvm)
@@ -49,3 +50,7 @@
 - 在 pages 資料夾內新增 `[...xxx].vue` 檔案，可新增所有層級的路由，範例：
   - 設定 `pages\[...slug].vue` 並填入404資訊，則連上不存在的頁面時，呈現 404 頁面
 - 巢狀路由可參考 `pages\nest` 配置
+
+## 布局模板使用
+- 1.可查看 `app.vue` 的對應關係
+- 2.可以查看 `pages` 裡面的 `custom.vue`、`index.vue` 配置
