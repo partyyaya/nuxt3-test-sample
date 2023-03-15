@@ -1,6 +1,6 @@
 <template>
   <div>
-    TestInput
+    DynamicImport
     <input type="text" />
   </div>
 </template>
