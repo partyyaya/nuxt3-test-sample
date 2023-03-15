@@ -44,8 +44,8 @@
 - 預覽正式版：`yarn run preview`
 
 ## 動態路由使用
-- 在 pages 資料夾內設定 `[xxx].vue` 檔案可以自定義路由參數，範例：
+- 在 pages 資料夾內新增 `[xxx].vue` 檔案，可自定義動態路由，範例：
   - 設定 `pages\users\[id].vue`，則連上 `localhost:xxx/users/test`，則 `id` 為 test
-- 在 pages 資料夾內設定 `[...xxx].vue` 檔案可以所有層級的路由，範例：
-  - 設定 `pages\[...slug].vue` 並填入404資訊，則連上不存在的頁面時呈現 404
+- 在 pages 資料夾內新增 `[...xxx].vue` 檔案，可新增所有層級的路由，範例：
+  - 設定 `pages\[...slug].vue` 並填入404資訊，則連上不存在的頁面時，呈現 404 頁面
 - 巢狀路由可參考 `pages\nest` 配置
