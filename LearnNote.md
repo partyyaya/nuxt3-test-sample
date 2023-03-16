@@ -14,10 +14,12 @@
 - 2.可查看 `pages` 裡面的 `custom.vue`、`index.vue` 配置
 
 ### 元件使用
-- 可參考 `pages\list.vue` 的引用方式
+- 以下元件使用可參考 `pages\component.vue` 的引用方式
 - 元件主要集中放在 `components`，並且會自動引入
 - 元件的名稱會基於路徑、檔案名稱，並刪除重複的字段
   - `test\input.vue`，則引入的元件名稱為：`<TestInput>`、`test-input`
   - `form\table\TableInput.vue`，則引入的元件名稱為：`<FormTableInput>`、`<form-table-input>`
 - 動態元件：若要使用 `<component :is="" />` 進行動態切換，則可使用 `resolveComponent` 引入元件
 - 動態引入元件：於元件名稱前面增加 `Lazy` 前綴即可，如：`<DynamicImport>` 更換成 `<LazyDynamicImport>`
+- `<ClientOnly>` 元件：用於控制被包裹的元件僅在客戶端進行渲染
+  - 也可在元件名稱加上 `.client`、`.server` 後綴來切換，詳細可看裡面程式碼
