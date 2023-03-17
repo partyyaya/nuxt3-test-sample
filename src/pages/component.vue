@@ -21,16 +21,16 @@
         頁面上會顯示 client 端
         開發者工具 > 網路預覽，會發現是server端
     -->
-    <div>A 區塊是由 {{ renderSide() }} 渲染</div>
+    <div>A 區塊是由渲染</div>
+    <!-- 會自動切換 .clent、.server元件 -->
+    <ClientAndServer />
     <ClientOnly>
       <ClientOnlyTest />
       <!-- 客戶端載入完成 ClientOnlyTest 元件時，才替換掉 #fallback 的內容-->
       <template #fallback>
-        該區塊是由 {{ renderSide() }} 渲染，ClientOnlyTest 元件載入中...
+        <div>該區塊是由渲染，ClientOnlyTest 元件載入中...</div>
       </template>
     </ClientOnly>
-    <!-- 會自動切換 .clent、.server元件 -->
-    <client-and-server />
   </div>
 </template>
 

@@ -23,3 +23,21 @@
 - 動態引入元件：於元件名稱前面增加 `Lazy` 前綴即可，如：`<DynamicImport>` 更換成 `<LazyDynamicImport>`
 - `<ClientOnly>` 元件：用於控制被包裹的元件僅在客戶端進行渲染
   - 也可在元件名稱加上 `.client`、`.server` 後綴來切換，詳細可看裡面程式碼
+
+### 組合式函數
+- 以下元件使用可參考 `pages\composables.vue` 的引用方式
+- 位於 `composables` 目錄底下，有兩種新增方式：
+  - 注意：`nuxt` 會自動引入目錄下的第一層檔案，除非第二層檔名為 `index`
+  - 1.由檔名命名
+  - 2.在檔案中命名函數
+- 若想設定 `composables` 目錄底下的都引入，需設定 `nuxt.config`
+  ```js
+  export default defineNuxtConfig({
+    imports: {
+      dirs: [
+        // 掃描 composables 目錄下所有檔案，** 代表不管檔案路徑多深
+        'composables/**'
+      ]
+    }
+  })
+  ```

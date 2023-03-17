@@ -20,10 +20,10 @@ const todos: String[] = ['1', '2', '3']
 const loading = ref(false)
 nuxtApp.hook('page:start', () => {
   loading.value = true
-  console.log('test1')
+  console.log('page:start')
 })
 nuxtApp.hook('page:finish', () => {
   loading.value = false
-  console.log('test2')
+  console.log('page:finish')
 })
 </script>

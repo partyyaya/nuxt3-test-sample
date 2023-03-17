@@ -14,10 +14,10 @@
       </template>
     </NuxtLayout>
     ------------------------------<br />
-    <!-- 對應 pages/list.vue -->
+    <!-- 對應 pages/component.vue -->
     <NuxtLink to="/component"> 进入元件使用頁 </NuxtLink>
-    <!-- 使用 composables 內的 hook -->
-    {{ foo }}
+    <!-- 對應 pages/composables.vue -->
+    <NuxtLink to="/composables"> 进入組合函數使用頁 </NuxtLink>
     <!-- 使用 stores -->
     {{ JSON.stringify(userInfo) }}
   </div>
@@ -29,10 +29,8 @@ import { useUserStore } from '@/stores'
 export default defineComponent({
   name: 'Index',
   setup() {
-    const foo = useFoo()
     const userInfo = useUserStore().userInfo
     return {
-      foo,
       userInfo
     }
   }
