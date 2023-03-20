@@ -25,7 +25,7 @@
   - 也可在元件名稱加上 `.client`、`.server` 後綴來切換，詳細可看裡面程式碼
 
 ### 組合式函數
-- 以下元件使用可參考 `pages\composables.vue` 的引用方式
+- 以下組合式函數使用可參考 `pages\composables.vue` 的引用方式
 - 位於 `composables` 目錄底下，有兩種新增方式：
   - 注意：`nuxt` 會自動引入目錄下的第一層檔案，除非第二層檔名為 `index`
   - 1.由檔名命名
