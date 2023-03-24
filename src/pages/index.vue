@@ -15,9 +15,11 @@
     </NuxtLayout>
     ------------------------------<br />
     <!-- 對應 pages/component.vue -->
-    <NuxtLink to="/component"> 进入元件使用頁 </NuxtLink>
+    <NuxtLink to="/component"> 进入元件使用頁 </NuxtLink><br />
     <!-- 對應 pages/composables.vue -->
-    <NuxtLink to="/composables"> 进入組合函數使用頁 </NuxtLink>
+    <NuxtLink to="/composables"> 进入組合函數使用頁 </NuxtLink><br />
+    <!-- 對應 pages/plugins.vue -->
+    <NuxtLink to="/plugins"> 进入插件使用頁 </NuxtLink><br />
     <!-- 使用 stores -->
     {{ JSON.stringify(userInfo) }}
   </div>

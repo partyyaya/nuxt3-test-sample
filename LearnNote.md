@@ -15,7 +15,7 @@
 
 ### 元件使用
 - 以下元件使用可參考 `pages\component.vue` 的引用方式
-- 元件主要集中放在 `components`，並且會自動引入
+- 元件集中放在 `components`，並且會自動引入
 - 元件的名稱會基於路徑、檔案名稱，並刪除重複的字段
   - `test\input.vue`，則引入的元件名稱為：`<TestInput>`、`test-input`
   - `form\table\TableInput.vue`，則引入的元件名稱為：`<FormTableInput>`、`<form-table-input>`
@@ -26,7 +26,7 @@
 
 ### 組合式函數
 - 以下組合式函數使用可參考 `pages\composables.vue` 的引用方式
-- 位於 `composables` 目錄底下，有兩種新增方式：
+- 集中放在 `composables` 目錄底下並會自動引入，有兩種新增方式：
   - 注意：`nuxt` 會自動引入目錄下的第一層檔案，除非第二層檔名為 `index`
   - 1.由檔名命名
   - 2.在檔案中命名函數
@@ -41,3 +41,19 @@
     }
   })
   ```
+
+### 插件
+- 以下插件使用可參考 `pages\plugins.vue` 的引用方式
+- 集中放在 `plugins` 目錄底下並會自動引入
+  - 注意：`nuxt` 會自動引入目錄下的第一層檔案，除非第二層檔名為 `index`
+  - 可在名稱加上 `.client`、`.server` 後綴來切換伺服器端或客戶端中使用
+- 建立插件的基本方式：
+  ```ts
+  export default defineNuxtPlugin(nuxtApp => {
+    // 可以使用 nuxtApp 來做一些事情
+  })
+  ```
+- 若使用 `Providing Helpers` 可參考 `myPlugin\index.ts` 的使用方式
+- 若使用 `vue-use` 可參考 `vue-gtag.client.ts` 的使用方式，會自動引用
+  - 若要使用則需加入依賴：`yarn add -D vue-gtag-next`
+- 若使用 `vue-directives` 可參考 `directives.ts` 的使用方式
